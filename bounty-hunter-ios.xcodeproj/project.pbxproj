@@ -1,0 +1,472 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		912D910F19279EE300F9E495 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 912D910E19279EE300F9E495 /* Foundation.framework */; };
+		912D911119279EE300F9E495 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 912D911019279EE300F9E495 /* CoreGraphics.framework */; };
+		912D911319279EE300F9E495 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 912D911219279EE300F9E495 /* UIKit.framework */; };
+		912D911919279EE300F9E495 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 912D911719279EE300F9E495 /* InfoPlist.strings */; };
+		912D911B19279EE300F9E495 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 912D911A19279EE300F9E495 /* main.m */; };
+		912D911F19279EE300F9E495 /* MainAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 912D911E19279EE300F9E495 /* MainAppDelegate.m */; };
+		912D912219279EE300F9E495 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 912D912019279EE300F9E495 /* Main.storyboard */; };
+		912D912519279EE300F9E495 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 912D912419279EE300F9E495 /* MainViewController.m */; };
+		912D912719279EE300F9E495 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 912D912619279EE300F9E495 /* Images.xcassets */; };
+		912D912E19279EE300F9E495 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 912D912D19279EE300F9E495 /* XCTest.framework */; };
+		912D912F19279EE300F9E495 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 912D910E19279EE300F9E495 /* Foundation.framework */; };
+		912D913019279EE300F9E495 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 912D911219279EE300F9E495 /* UIKit.framework */; };
+		912D913819279EE300F9E495 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 912D913619279EE300F9E495 /* InfoPlist.strings */; };
+		912D913A19279EE300F9E495 /* bounty_hunter_iosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 912D913919279EE300F9E495 /* bounty_hunter_iosTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		912D913119279EE300F9E495 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 912D910319279EE300F9E495 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 912D910A19279EE300F9E495;
+			remoteInfo = "bounty-hunter-ios";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		912D910B19279EE300F9E495 /* bounty-hunter-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "bounty-hunter-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		912D910E19279EE300F9E495 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		912D911019279EE300F9E495 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		912D911219279EE300F9E495 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		912D911619279EE300F9E495 /* bounty-hunter-ios-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "bounty-hunter-ios-Info.plist"; sourceTree = "<group>"; };
+		912D911819279EE300F9E495 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		912D911A19279EE300F9E495 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		912D911C19279EE300F9E495 /* bounty-hunter-ios-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "bounty-hunter-ios-Prefix.pch"; sourceTree = "<group>"; };
+		912D911D19279EE300F9E495 /* MainAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainAppDelegate.h; sourceTree = "<group>"; };
+		912D911E19279EE300F9E495 /* MainAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainAppDelegate.m; sourceTree = "<group>"; };
+		912D912119279EE300F9E495 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		912D912319279EE300F9E495 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		912D912419279EE300F9E495 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		912D912619279EE300F9E495 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		912D912C19279EE300F9E495 /* bounty-hunter-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "bounty-hunter-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		912D912D19279EE300F9E495 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		912D913519279EE300F9E495 /* bounty-hunter-iosTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "bounty-hunter-iosTests-Info.plist"; sourceTree = "<group>"; };
+		912D913719279EE300F9E495 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		912D913919279EE300F9E495 /* bounty_hunter_iosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = bounty_hunter_iosTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		912D910819279EE300F9E495 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				912D911119279EE300F9E495 /* CoreGraphics.framework in Frameworks */,
+				912D911319279EE300F9E495 /* UIKit.framework in Frameworks */,
+				912D910F19279EE300F9E495 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		912D912919279EE300F9E495 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				912D912E19279EE300F9E495 /* XCTest.framework in Frameworks */,
+				912D913019279EE300F9E495 /* UIKit.framework in Frameworks */,
+				912D912F19279EE300F9E495 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		912D910219279EE300F9E495 = {
+			isa = PBXGroup;
+			children = (
+				912D911419279EE300F9E495 /* bounty-hunter-ios */,
+				912D913319279EE300F9E495 /* bounty-hunter-iosTests */,
+				912D910D19279EE300F9E495 /* Frameworks */,
+				912D910C19279EE300F9E495 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		912D910C19279EE300F9E495 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				912D910B19279EE300F9E495 /* bounty-hunter-ios.app */,
+				912D912C19279EE300F9E495 /* bounty-hunter-iosTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		912D910D19279EE300F9E495 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				912D910E19279EE300F9E495 /* Foundation.framework */,
+				912D911019279EE300F9E495 /* CoreGraphics.framework */,
+				912D911219279EE300F9E495 /* UIKit.framework */,
+				912D912D19279EE300F9E495 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		912D911419279EE300F9E495 /* bounty-hunter-ios */ = {
+			isa = PBXGroup;
+			children = (
+				912D911D19279EE300F9E495 /* MainAppDelegate.h */,
+				912D911E19279EE300F9E495 /* MainAppDelegate.m */,
+				912D912019279EE300F9E495 /* Main.storyboard */,
+				912D912319279EE300F9E495 /* MainViewController.h */,
+				912D912419279EE300F9E495 /* MainViewController.m */,
+				912D912619279EE300F9E495 /* Images.xcassets */,
+				912D911519279EE300F9E495 /* Supporting Files */,
+			);
+			path = "bounty-hunter-ios";
+			sourceTree = "<group>";
+		};
+		912D911519279EE300F9E495 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				912D911619279EE300F9E495 /* bounty-hunter-ios-Info.plist */,
+				912D911719279EE300F9E495 /* InfoPlist.strings */,
+				912D911A19279EE300F9E495 /* main.m */,
+				912D911C19279EE300F9E495 /* bounty-hunter-ios-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		912D913319279EE300F9E495 /* bounty-hunter-iosTests */ = {
+			isa = PBXGroup;
+			children = (
+				912D913919279EE300F9E495 /* bounty_hunter_iosTests.m */,
+				912D913419279EE300F9E495 /* Supporting Files */,
+			);
+			path = "bounty-hunter-iosTests";
+			sourceTree = "<group>";
+		};
+		912D913419279EE300F9E495 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				912D913519279EE300F9E495 /* bounty-hunter-iosTests-Info.plist */,
+				912D913619279EE300F9E495 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		912D910A19279EE300F9E495 /* bounty-hunter-ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 912D913D19279EE300F9E495 /* Build configuration list for PBXNativeTarget "bounty-hunter-ios" */;
+			buildPhases = (
+				912D910719279EE300F9E495 /* Sources */,
+				912D910819279EE300F9E495 /* Frameworks */,
+				912D910919279EE300F9E495 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "bounty-hunter-ios";
+			productName = "bounty-hunter-ios";
+			productReference = 912D910B19279EE300F9E495 /* bounty-hunter-ios.app */;
+			productType = "com.apple.product-type.application";
+		};
+		912D912B19279EE300F9E495 /* bounty-hunter-iosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 912D914019279EE300F9E495 /* Build configuration list for PBXNativeTarget "bounty-hunter-iosTests" */;
+			buildPhases = (
+				912D912819279EE300F9E495 /* Sources */,
+				912D912919279EE300F9E495 /* Frameworks */,
+				912D912A19279EE300F9E495 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				912D913219279EE300F9E495 /* PBXTargetDependency */,
+			);
+			name = "bounty-hunter-iosTests";
+			productName = "bounty-hunter-iosTests";
+			productReference = 912D912C19279EE300F9E495 /* bounty-hunter-iosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		912D910319279EE300F9E495 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = Main;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = IOSAvenger;
+				TargetAttributes = {
+					912D912B19279EE300F9E495 = {
+						TestTargetID = 912D910A19279EE300F9E495;
+					};
+				};
+			};
+			buildConfigurationList = 912D910619279EE300F9E495 /* Build configuration list for PBXProject "bounty-hunter-ios" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 912D910219279EE300F9E495;
+			productRefGroup = 912D910C19279EE300F9E495 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				912D910A19279EE300F9E495 /* bounty-hunter-ios */,
+				912D912B19279EE300F9E495 /* bounty-hunter-iosTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		912D910919279EE300F9E495 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				912D912719279EE300F9E495 /* Images.xcassets in Resources */,
+				912D911919279EE300F9E495 /* InfoPlist.strings in Resources */,
+				912D912219279EE300F9E495 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		912D912A19279EE300F9E495 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				912D913819279EE300F9E495 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		912D910719279EE300F9E495 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				912D911B19279EE300F9E495 /* main.m in Sources */,
+				912D912519279EE300F9E495 /* MainViewController.m in Sources */,
+				912D911F19279EE300F9E495 /* MainAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		912D912819279EE300F9E495 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				912D913A19279EE300F9E495 /* bounty_hunter_iosTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		912D913219279EE300F9E495 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 912D910A19279EE300F9E495 /* bounty-hunter-ios */;
+			targetProxy = 912D913119279EE300F9E495 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		912D911719279EE300F9E495 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				912D911819279EE300F9E495 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		912D912019279EE300F9E495 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				912D912119279EE300F9E495 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		912D913619279EE300F9E495 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				912D913719279EE300F9E495 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		912D913B19279EE300F9E495 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		912D913C19279EE300F9E495 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		912D913E19279EE300F9E495 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "bounty-hunter-ios/bounty-hunter-ios-Prefix.pch";
+				INFOPLIST_FILE = "bounty-hunter-ios/bounty-hunter-ios-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		912D913F19279EE300F9E495 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "bounty-hunter-ios/bounty-hunter-ios-Prefix.pch";
+				INFOPLIST_FILE = "bounty-hunter-ios/bounty-hunter-ios-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		912D914119279EE300F9E495 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/bounty-hunter-ios.app/bounty-hunter-ios";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "bounty-hunter-ios/bounty-hunter-ios-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "bounty-hunter-iosTests/bounty-hunter-iosTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		912D914219279EE300F9E495 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/bounty-hunter-ios.app/bounty-hunter-ios";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "bounty-hunter-ios/bounty-hunter-ios-Prefix.pch";
+				INFOPLIST_FILE = "bounty-hunter-iosTests/bounty-hunter-iosTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		912D910619279EE300F9E495 /* Build configuration list for PBXProject "bounty-hunter-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				912D913B19279EE300F9E495 /* Debug */,
+				912D913C19279EE300F9E495 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		912D913D19279EE300F9E495 /* Build configuration list for PBXNativeTarget "bounty-hunter-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				912D913E19279EE300F9E495 /* Debug */,
+				912D913F19279EE300F9E495 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		912D914019279EE300F9E495 /* Build configuration list for PBXNativeTarget "bounty-hunter-iosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				912D914119279EE300F9E495 /* Debug */,
+				912D914219279EE300F9E495 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 912D910319279EE300F9E495 /* Project object */;
+}
