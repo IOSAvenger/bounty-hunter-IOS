@@ -5,29 +5,53 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>3DAEF254-8221-401F-9021-A172B4A7F128</string>
+	<string>C8913B97-A3A9-4D3A-B3B5-7834DE81B1D9</string>
 	<key>IDESourceControlProjectName</key>
 	<string>bounty-hunter-ios</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
+		<key>00AE9C88-F50B-4943-B9EF-CDF66F0EA62E</key>
+		<string>https://github.com/IOSAvenger/bounty-hunter-IOS.git</string>
+		<key>124E7551-F1EB-46B2-B1EA-34B5B9AB802D</key>
+		<string>https://github.com/IOSAvenger/bounty-hunter-IOS.git</string>
 		<key>671B952A-7608-45C4-AE74-9EA67B0F6C7C</key>
 		<string>https://github.com/YuJianSirius/shutterbug.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>bounty-hunter-ios/bounty-hunter-ios.xcodeproj/project.xcworkspace</string>
+	<string>bounty-hunter-IOS/bounty-hunter-ios.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
+		<key>00AE9C88-F50B-4943-B9EF-CDF66F0EA62E</key>
+		<string>../..</string>
+		<key>124E7551-F1EB-46B2-B1EA-34B5B9AB802D</key>
+		<string>../../../bounty-hunter-ios</string>
 		<key>671B952A-7608-45C4-AE74-9EA67B0F6C7C</key>
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/YuJianSirius/shutterbug.git</string>
+	<string>https://github.com/IOSAvenger/bounty-hunter-IOS.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
 	<string>671B952A-7608-45C4-AE74-9EA67B0F6C7C</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>124E7551-F1EB-46B2-B1EA-34B5B9AB802D</string>
+			<key>IDESourceControlWCCName</key>
+			<string>bounty-hunter-ios</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>00AE9C88-F50B-4943-B9EF-CDF66F0EA62E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>bounty-hunter-IOS</string>
+		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
