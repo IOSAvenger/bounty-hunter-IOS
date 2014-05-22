@@ -10,6 +10,7 @@
 #import "AFHTTPRequestOperationManager.h"
 #import "AFHTTPRequestOperation.h"
 
+#define INDEX_URL @"http://localhost:1337"
 
 @interface MainViewController ()
 
@@ -33,11 +34,17 @@
     }];
     */
     
-    NSString *URLString = [NSString stringWithFormat:@"http://jwc.wyu.edu.cn/student/logon.asp"];
-    NSDictionary *parameters = @{@"UserCode": @"11080734", @"UserPwd" :;
-    [[AFHTTPRequestSerializer serializer] requestWithMethod:@"POST" URLString:URLString parameters:parameters];
+    NSURL *index_URL = [NSURL URLWithString:INDEX_URL];
+    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:index_URL];
     
+    [request setHTTPMethod:@"GET"];
+    //[request addValue:contentType forHTTPHeaderField:@"referer"];
+    
+    NSURLResponse *response;
+    
+    NSData *responseData = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:nil];
+    NSString *pageSource = [[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding];
+    NSLog(@"%@",pageSource);
 }
-
 
 @end
