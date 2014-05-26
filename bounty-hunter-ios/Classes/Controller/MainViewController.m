@@ -10,7 +10,7 @@
 #import "AFHTTPRequestOperationManager.h"
 #import "AFHTTPRequestOperation.h"
 
-#define INDEX_URL @"http://localhost:1337"
+#define INDEX_URL @"http://localhost:1337/login"
 
 @interface MainViewController ()
 
