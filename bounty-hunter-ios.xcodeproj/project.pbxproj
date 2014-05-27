@@ -19,6 +19,7 @@
 		912D913019279EE300F9E495 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 912D911219279EE300F9E495 /* UIKit.framework */; };
 		912D913819279EE300F9E495 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 912D913619279EE300F9E495 /* InfoPlist.strings */; };
 		912D913A19279EE300F9E495 /* bounty_hunter_iosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 912D913919279EE300F9E495 /* bounty_hunter_iosTests.m */; };
+		912E54F3193485450067E6D9 /* InfoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 912E54F2193485450067E6D9 /* InfoTableViewController.m */; };
 		9191D3B51928F4D600D97AFF /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9191D3911928F4D600D97AFF /* AFHTTPRequestOperation.m */; };
 		9191D3B61928F4D600D97AFF /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9191D3931928F4D600D97AFF /* AFHTTPRequestOperationManager.m */; };
 		9191D3B71928F4D600D97AFF /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9191D3951928F4D600D97AFF /* AFHTTPSessionManager.m */; };
@@ -66,6 +67,8 @@
 		912D913519279EE300F9E495 /* bounty-hunter-iosTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "bounty-hunter-iosTests-Info.plist"; sourceTree = "<group>"; };
 		912D913719279EE300F9E495 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		912D913919279EE300F9E495 /* bounty_hunter_iosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = bounty_hunter_iosTests.m; sourceTree = "<group>"; };
+		912E54F1193485450067E6D9 /* InfoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoTableViewController.h; sourceTree = "<group>"; };
+		912E54F2193485450067E6D9 /* InfoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoTableViewController.m; sourceTree = "<group>"; };
 		9191D3901928F4D600D97AFF /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
 		9191D3911928F4D600D97AFF /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
 		9191D3921928F4D600D97AFF /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
@@ -290,6 +293,8 @@
 			children = (
 				9191D3D01928F70700D97AFF /* MainViewController.h */,
 				9191D3D11928F70700D97AFF /* MainViewController.m */,
+				912E54F1193485450067E6D9 /* InfoTableViewController.h */,
+				912E54F2193485450067E6D9 /* InfoTableViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -408,6 +413,7 @@
 			files = (
 				9191D3B51928F4D600D97AFF /* AFHTTPRequestOperation.m in Sources */,
 				9191D3D71928F70700D97AFF /* MainAppDelegate.m in Sources */,
+				912E54F3193485450067E6D9 /* InfoTableViewController.m in Sources */,
 				9191D3C21928F4D600D97AFF /* UIImageView+AFNetworking.m in Sources */,
 				912D911B19279EE300F9E495 /* main.m in Sources */,
 				9191D3B61928F4D600D97AFF /* AFHTTPRequestOperationManager.m in Sources */,

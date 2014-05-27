@@ -10,7 +10,7 @@
 #import "AFHTTPRequestOperationManager.h"
 #import "AFHTTPRequestOperation.h"
 
-#define INDEX_URL @"http://localhost:1337/login"
+#define INDEX_URL @"http://localhost:1337/do/login"
 
 @interface MainViewController ()
 
@@ -37,7 +37,11 @@
     NSURL *index_URL = [NSURL URLWithString:INDEX_URL];
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:index_URL];
     
-    [request setHTTPMethod:@"GET"];
+    NSString *postString = [NSString stringWithFormat:@"username=11080734&password=11111&option=user"];
+    NSData   *postData = [postString dataUsingEncoding:NSUTF8StringEncoding allowLossyConversion:YES];
+    
+    [request setHTTPMethod:@"POST"];
+    [request setHTTPBody:postData];
     //[request addValue:contentType forHTTPHeaderField:@"referer"];
     
     NSURLResponse *response;
