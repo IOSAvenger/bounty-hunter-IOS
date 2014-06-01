@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		912CA959193B6976009545B6 /* TaskListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 912CA958193B6976009545B6 /* TaskListViewController.m */; };
+		912CA95C193B69F9009545B6 /* TaskListTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 912CA95B193B69F9009545B6 /* TaskListTableView.m */; };
 		912D910F19279EE300F9E495 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 912D910E19279EE300F9E495 /* Foundation.framework */; };
 		912D911119279EE300F9E495 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 912D911019279EE300F9E495 /* CoreGraphics.framework */; };
 		912D911319279EE300F9E495 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 912D911219279EE300F9E495 /* UIKit.framework */; };
@@ -54,6 +56,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		912CA957193B6976009545B6 /* TaskListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskListViewController.h; sourceTree = "<group>"; };
+		912CA958193B6976009545B6 /* TaskListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskListViewController.m; sourceTree = "<group>"; };
+		912CA95A193B69F9009545B6 /* TaskListTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskListTableView.h; sourceTree = "<group>"; };
+		912CA95B193B69F9009545B6 /* TaskListTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskListTableView.m; sourceTree = "<group>"; };
 		912D910B19279EE300F9E495 /* bounty-hunter-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "bounty-hunter-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		912D910E19279EE300F9E495 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		912D911019279EE300F9E495 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -304,6 +310,8 @@
 				9191D3D11928F70700D97AFF /* MainViewController.m */,
 				912E54F1193485450067E6D9 /* InfoTableViewController.h */,
 				912E54F2193485450067E6D9 /* InfoTableViewController.m */,
+				912CA957193B6976009545B6 /* TaskListViewController.h */,
+				912CA958193B6976009545B6 /* TaskListViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -318,6 +326,8 @@
 		9191D3D51928F70700D97AFF /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				912CA95A193B69F9009545B6 /* TaskListTableView.h */,
+				912CA95B193B69F9009545B6 /* TaskListTableView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -434,8 +444,10 @@
 				9191D3BA1928F4D600D97AFF /* AFURLConnectionOperation.m in Sources */,
 				9191D3C11928F4D600D97AFF /* UIButton+AFNetworking.m in Sources */,
 				9191D3BF1928F4D600D97AFF /* UIActivityIndicatorView+AFNetworking.m in Sources */,
+				912CA959193B6976009545B6 /* TaskListViewController.m in Sources */,
 				9191D3B91928F4D600D97AFF /* AFSecurityPolicy.m in Sources */,
 				9191D3C41928F4D600D97AFF /* UIRefreshControl+AFNetworking.m in Sources */,
+				912CA95C193B69F9009545B6 /* TaskListTableView.m in Sources */,
 				9191D3C51928F4D600D97AFF /* UIWebView+AFNetworking.m in Sources */,
 				914DBFAA1938CD7D00AFAB09 /* LoginViewController.m in Sources */,
 				9191D3B71928F4D600D97AFF /* AFHTTPSessionManager.m in Sources */,
