@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		910BF74E193C90A500749318 /* TaskDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 910BF74D193C90A500749318 /* TaskDetailsViewController.m */; };
 		912CA959193B6976009545B6 /* TaskListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 912CA958193B6976009545B6 /* TaskListViewController.m */; };
 		912CA95C193B69F9009545B6 /* TaskListTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 912CA95B193B69F9009545B6 /* TaskListTableView.m */; };
 		912D910F19279EE300F9E495 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 912D910E19279EE300F9E495 /* Foundation.framework */; };
@@ -56,6 +57,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		910BF74C193C90A500749318 /* TaskDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskDetailsViewController.h; sourceTree = "<group>"; };
+		910BF74D193C90A500749318 /* TaskDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskDetailsViewController.m; sourceTree = "<group>"; };
 		912CA957193B6976009545B6 /* TaskListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskListViewController.h; sourceTree = "<group>"; };
 		912CA958193B6976009545B6 /* TaskListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskListViewController.m; sourceTree = "<group>"; };
 		912CA95A193B69F9009545B6 /* TaskListTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskListTableView.h; sourceTree = "<group>"; };
@@ -312,6 +315,8 @@
 				912E54F2193485450067E6D9 /* InfoTableViewController.m */,
 				912CA957193B6976009545B6 /* TaskListViewController.h */,
 				912CA958193B6976009545B6 /* TaskListViewController.m */,
+				910BF74C193C90A500749318 /* TaskDetailsViewController.h */,
+				910BF74D193C90A500749318 /* TaskDetailsViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -449,6 +454,7 @@
 				9191D3C41928F4D600D97AFF /* UIRefreshControl+AFNetworking.m in Sources */,
 				912CA95C193B69F9009545B6 /* TaskListTableView.m in Sources */,
 				9191D3C51928F4D600D97AFF /* UIWebView+AFNetworking.m in Sources */,
+				910BF74E193C90A500749318 /* TaskDetailsViewController.m in Sources */,
 				914DBFAA1938CD7D00AFAB09 /* LoginViewController.m in Sources */,
 				9191D3B71928F4D600D97AFF /* AFHTTPSessionManager.m in Sources */,
 				9191D3C01928F4D600D97AFF /* UIAlertView+AFNetworking.m in Sources */,
