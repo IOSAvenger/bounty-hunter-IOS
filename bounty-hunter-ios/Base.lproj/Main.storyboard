@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="0hf-pV-d5r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Ejf-ap-Xop">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -23,7 +23,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-701" y="-956"/>
+            <point key="canvasLocation" x="-1181" y="-1024"/>
         </scene>
         <!--Task List View Controller - 任务列表-->
         <scene sceneID="s9I-CA-79x">
@@ -100,7 +100,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xOL-tH-ZSR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-747" y="417"/>
+            <point key="canvasLocation" x="-753" y="417"/>
         </scene>
         <!--View Controller - 我的任务-->
         <scene sceneID="Rxn-EA-8gu">
@@ -119,7 +119,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Zq-gq-Njo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-45" y="429"/>
+            <point key="canvasLocation" x="-181" y="417"/>
         </scene>
         <!--Info Table View Controller - 猎人信息-->
         <scene sceneID="MSc-9O-rLe">
@@ -188,54 +188,53 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sS6-9d-yfr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-45" y="1095"/>
+            <point key="canvasLocation" x="-181" y="1143"/>
         </scene>
         <!--Login View Controller-->
-        <scene sceneID="i2M-X9-aaX">
+        <scene sceneID="Jbj-S0-vHG">
             <objects>
-                <viewController id="LKI-9L-2nu" customClass="LoginViewController" sceneMemberID="viewController">
+                <viewController id="Ejf-ap-Xop" customClass="LoginViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Ojz-QO-zGr"/>
-                        <viewControllerLayoutGuide type="bottom" id="wOg-f6-4wz"/>
+                        <viewControllerLayoutGuide type="top" id="2HP-kD-eRA"/>
+                        <viewControllerLayoutGuide type="bottom" id="6AF-XK-hVw"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="gAU-m7-9FB">
+                    <view key="view" contentMode="scaleToFill" id="HEw-DS-pBg">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="账号" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="kiU-AK-DTV">
-                                <rect key="frame" x="36" y="85" width="257" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="密码" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="K5u-lL-gXE">
-                                <rect key="frame" x="36" y="131" width="265" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="密码" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="DR5-AI-Oyf">
+                                <rect key="frame" x="55" y="210" width="210" height="50"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TB5-Ty-GXX">
-                                <rect key="frame" x="232" y="194" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bQL-a3-Shj">
+                                <rect key="frame" x="229" y="284" width="51" height="38"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="登录">
                                     <color key="titleColor" red="0.79098808890000005" green="0.81030923020000001" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="login:" destination="LKI-9L-2nu" eventType="touchUpInside" id="xYS-hh-Xlu"/>
+                                    <action selector="login:" destination="Ejf-ap-Xop" eventType="touchUpInside" id="iZv-vO-nsO"/>
+                                    <segue destination="0hf-pV-d5r" kind="modal" identifier="Login Succ" modalTransitionStyle="coverVertical" id="4LG-Fs-tJJ"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="账号" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="jCF-GK-T4f">
+                                <rect key="frame" x="55" y="174" width="210" height="45"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.99964126279999999" green="0.94061779499999998" blue="0.92216412999999997" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
-                        <outlet property="password" destination="K5u-lL-gXE" id="9dh-7c-bPE"/>
-                        <outlet property="username" destination="kiU-AK-DTV" id="3Eq-YQ-hMi"/>
+                        <outlet property="password" destination="DR5-AI-Oyf" id="i7q-xg-fqL"/>
+                        <outlet property="username" destination="jCF-GK-T4f" id="QNf-lt-b8O"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lwi-8i-Cdh" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HDv-6X-Dzi" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-756" y="-270"/>
+            <point key="canvasLocation" x="-893" y="-300"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

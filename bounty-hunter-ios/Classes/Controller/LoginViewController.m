@@ -8,10 +8,13 @@
 
 #import "LoginViewController.h"
 #import "AFNetworking.h"
-//定义URL
-#define Base_url @"eqeqweqwqwq"
-@interface LoginViewController ()
 
+//定义URL
+#define LOGIN_URL @"http://localhost:1337/do/login"
+@interface LoginViewController ()
+@property (weak, nonatomic) IBOutlet UITextField *username;
+@property (weak, nonatomic) IBOutlet UITextField *password;
+@property(nonatomic,retain) UIActivityIndicatorView *activityview;
 @end
 
 @implementation LoginViewController
@@ -19,11 +22,17 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    UIImage *image=[UIImage imageNamed:@"background1.jpg"];
+    UIImage *image=[UIImage imageNamed:@"login.png"];
     self.view.backgroundColor=[UIColor colorWithPatternImage:image];
     self.username.delegate=self;
     self.password.delegate=self;
-	// Do any additional setup after loading the view, typically from a nib.
+    // Do any additional setup after loading the view, typically from a nib.
+}
+
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
 }
 
 - (IBAction)login:(id)sender {
@@ -37,7 +46,7 @@
     
     if (usernametext.length==0||passwordtext.length==0) {
         
-        UIAlertView *alertview=[[UIAlertView alloc]initWithTitle:@"提示！" message:@"账号或者密码不能为空！" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+        UIAlertView *alertview=[[UIAlertView alloc] initWithTitle:@"提示！" message:@"账号或者密码不能为空！" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
         
         [alertview show];
         
@@ -55,15 +64,33 @@
         
         _activityview.alpha=0.3;
         
-        [_activityview startAnimating];
+        //[_activityview startAnimating];
         
-        NSString *urlstring=[Base_url stringByAppendingFormat:@"%@&%@.html",usernametext,passwordtext];
         
-        NSURL *url=[NSURL URLWithString:urlstring];
+        NSURL *index_URL = [NSURL URLWithString:LOGIN_URL];
+        NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:index_URL];
         
-        NSMutableURLRequest *request=[NSMutableURLRequest requestWithURL:url];
+        NSString *postString = [NSString stringWithFormat:@"username=%@&password=%@&option=user",usernametext,passwordtext];
+        NSData   *postData = [postString dataUsingEncoding:NSUTF8StringEncoding allowLossyConversion:YES];
+        
         [request setHTTPMethod:@"POST"];
+        [request setHTTPBody:postData];
+        //[request addValue:contentType forHTTPHeaderField:@"referer"];
+        NSURLResponse *response;
         
+        NSData *responseData = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:nil];
+        NSString *pageSource = [[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding];
+        NSLog(@"%@",pageSource);
+        
+        if ([pageSource rangeOfString:@"游客请先"].location != NSNotFound) {
+            UIAlertView *failalert = [[UIAlertView alloc] initWithTitle:@"登陆失败" message:@"账号或者密码错误，请重新登陆" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
+            [failalert show];
+        }else{
+            [self performSegueWithIdentifier:@"Login Succ" sender:self];
+        }
+
+
+        /*
         AFHTTPRequestOperation *operation=[[AFHTTPRequestOperation alloc]initWithRequest:request];
         
         operation.responseSerializer=[AFJSONResponseSerializer serializer];
@@ -89,6 +116,7 @@
         }];
         
         [operation start];
+         */
         
         //        loginaccessViewController *lv=[[loginaccessViewController alloc]init];
         //        [self presentViewController:lv animated:NO completion:NULL];

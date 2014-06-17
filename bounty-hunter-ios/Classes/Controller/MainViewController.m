@@ -37,12 +37,13 @@
     NSURL *index_URL = [NSURL URLWithString:INDEX_URL];
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:index_URL];
     
-    NSString *postString = [NSString stringWithFormat:@"username=11080734&password=11111&option=user"];
+    NSString *postString = [NSString stringWithFormat:@"username=11080734&password=111&option=user"];
     NSData   *postData = [postString dataUsingEncoding:NSUTF8StringEncoding allowLossyConversion:YES];
     
     [request setHTTPMethod:@"POST"];
     [request setHTTPBody:postData];
     //[request addValue:contentType forHTTPHeaderField:@"referer"];
+    
     
     NSURLResponse *response;
     
