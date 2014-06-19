@@ -8,10 +8,14 @@
 
 #import "LoginViewController.h"
 #import "AFNetworking.h"
+#import "MBProgressHUD.h"
 
 //定义URL
 #define LOGIN_URL @"http://localhost:1337/do/login"
-@interface LoginViewController ()
+@interface LoginViewController ()<MBProgressHUDDelegate>
+{
+    MBProgressHUD *HUD;
+}
 @property (weak, nonatomic) IBOutlet UITextField *username;
 @property (weak, nonatomic) IBOutlet UITextField *password;
 @property(nonatomic,retain) UIActivityIndicatorView *activityview;
@@ -51,45 +55,14 @@
         [alertview show];
         
     }else{
-        //数据字典
-        //        self.logindic=[[NSMutableDictionary alloc]initWithObjectsAndKeys:usernametext,@"username",passwordtext,@"password",nil];
-        _activityview=[[UIActivityIndicatorView alloc]initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
         
-        _activityview.center=self.view.center;
-        
-        [self.view addSubview:_activityview];
-        
-        
-        _activityview.backgroundColor=[UIColor grayColor];
-        
-        _activityview.alpha=0.3;
-        
-        //[_activityview startAnimating];
-        
-        
-        NSURL *index_URL = [NSURL URLWithString:LOGIN_URL];
-        NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:index_URL];
-        
-        NSString *postString = [NSString stringWithFormat:@"username=%@&password=%@&option=user",usernametext,passwordtext];
-        NSData   *postData = [postString dataUsingEncoding:NSUTF8StringEncoding allowLossyConversion:YES];
-        
-        [request setHTTPMethod:@"POST"];
-        [request setHTTPBody:postData];
-        //[request addValue:contentType forHTTPHeaderField:@"referer"];
-        NSURLResponse *response;
-        
-        NSData *responseData = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:nil];
-        NSString *pageSource = [[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding];
-        NSLog(@"%@",pageSource);
-        
-        if ([pageSource rangeOfString:@"游客请先"].location != NSNotFound) {
-            UIAlertView *failalert = [[UIAlertView alloc] initWithTitle:@"登陆失败" message:@"账号或者密码错误，请重新登陆" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
-            [failalert show];
-        }else{
-            [self performSegueWithIdentifier:@"Login Succ" sender:self];
-        }
+        HUD = [[MBProgressHUD alloc] initWithView:self.view];
+        [self.view addSubview:HUD];
+        HUD.delegate = self;
+        HUD.labelText = @"登录中···";
+        [HUD showWhileExecuting:@selector(Connection) onTarget:self withObject:nil animated:YES];
 
-
+        
         /*
         AFHTTPRequestOperation *operation=[[AFHTTPRequestOperation alloc]initWithRequest:request];
         
@@ -133,6 +106,39 @@
         [textField resignFirstResponder];
     }
     return YES;
+}
+
+- (void)Connection {
+	
+    NSURL *index_URL = [NSURL URLWithString:LOGIN_URL];
+    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:index_URL];
+    
+    NSString *postString = [NSString stringWithFormat:@"username=%@&password=%@&option=user",self.username.text,self.password.text];
+    NSData   *postData = [postString dataUsingEncoding:NSUTF8StringEncoding allowLossyConversion:YES];
+    
+    [request setHTTPMethod:@"POST"];
+    [request setHTTPBody:postData];
+    //[request addValue:contentType forHTTPHeaderField:@"referer"];
+    NSURLResponse *response;
+    
+    NSData *responseData = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:nil];
+    NSString *pageSource = [[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding];
+    NSLog(@"%@",pageSource);
+    
+    if (responseData) {
+        if ([pageSource rangeOfString:@"游客请先"].location != NSNotFound ) {
+            UIAlertView *failalert = [[UIAlertView alloc] initWithTitle:@"登陆失败" message:@"账号或者密码错误，请重新登陆" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
+            [failalert show];
+        }else{
+            dispatch_async(dispatch_get_main_queue(),^{
+                NSLog(@"OK");
+                [self performSegueWithIdentifier:@"Login Succ" sender:self];
+            });
+        }
+    }else{
+        UIAlertView *nointeralert = [[UIAlertView alloc] initWithTitle:@"连接失败" message:@"请检查网络，稍后再试" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
+        [nointeralert show];
+    }
 }
 
 @end

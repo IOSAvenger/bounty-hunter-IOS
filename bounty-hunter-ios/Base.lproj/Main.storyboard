@@ -23,7 +23,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1181" y="-1024"/>
+            <point key="canvasLocation" x="-1445" y="-936"/>
         </scene>
         <!--Task List View Controller - 任务列表-->
         <scene sceneID="s9I-CA-79x">
@@ -216,7 +216,6 @@
                                 </state>
                                 <connections>
                                     <action selector="login:" destination="Ejf-ap-Xop" eventType="touchUpInside" id="iZv-vO-nsO"/>
-                                    <segue destination="0hf-pV-d5r" kind="modal" identifier="Login Succ" modalTransitionStyle="coverVertical" id="4LG-Fs-tJJ"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="账号" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="jCF-GK-T4f">
@@ -230,11 +229,12 @@
                     <connections>
                         <outlet property="password" destination="DR5-AI-Oyf" id="i7q-xg-fqL"/>
                         <outlet property="username" destination="jCF-GK-T4f" id="QNf-lt-b8O"/>
+                        <segue destination="0hf-pV-d5r" kind="modal" identifier="Login Succ" modalTransitionStyle="flipHorizontal" id="UN5-ie-Zud"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HDv-6X-Dzi" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-893" y="-300"/>
+            <point key="canvasLocation" x="-1272" y="417"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
