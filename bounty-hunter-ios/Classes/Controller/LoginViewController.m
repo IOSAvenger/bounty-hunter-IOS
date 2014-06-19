@@ -131,7 +131,6 @@
             [failalert show];
         }else{
             dispatch_async(dispatch_get_main_queue(),^{
-                NSLog(@"OK");
                 [self performSegueWithIdentifier:@"Login Succ" sender:self];
             });
         }
